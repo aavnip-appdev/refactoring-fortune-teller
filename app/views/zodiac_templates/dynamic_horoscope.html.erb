@@ -1,0 +1,15 @@
+<h1><%= @the_sign.to_s.capitalize %></h1>
+
+<p><%= @horoscope %></p>
+
+<p>Your lucky numbers for today are:</p>
+
+
+
+<ul>
+  <% @array_of_numbers.each do |a_lucky_number| %>
+    <li>
+    <%= a_lucky_number %>
+    </li>
+  <% end %>
+</ul>
